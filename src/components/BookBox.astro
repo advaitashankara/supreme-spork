@@ -1,0 +1,96 @@
+---
+const { image, title, author, year, publisher, dlink, blink } = Astro.props;
+import "/public/theme.css";
+---
+
+<div class="book-box">
+  <div class="book-image">
+    <img src={image} alt={title} />
+  </div>
+  <div class="book-details">
+    <h2>{title}</h2>
+    <p class="author">{author}</p>
+    <p class="year">{year}</p>
+    <p class="publisher">{publisher}</p>
+    <div class="buttons">
+      <a href={dlink} class="download">
+        Download
+      </a>
+      <a href={blink} class="buy">
+        Buy Now
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .book-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .book-box:hover {
+  box-shadow: 0px 0px 5px rgba(190, 3, 247, 0.05);
+  }
+
+  .book-image {
+    flex: 0 0 20%;
+  }
+
+  .book-image img {
+    width: 100%;
+  }
+
+  .book-details {
+    flex: 1;
+  }
+
+  .book-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .book-details p {
+    margin-bottom: 0.5rem;
+  }
+
+  .book-details .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .download {
+    background-color: var(--theme-download);
+    color: var(--theme-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .download:hover {
+    background-color: var(--theme-download-hover);
+    text-decoration: none;
+  }
+
+  .buy {
+    background-color: var(--theme-download);
+    color: var(--theme-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .buy:hover {
+    background-color: var(--theme-buy-hover);
+    text-decoration: none;
+  }
+</style>

@@ -147,6 +147,10 @@
 	--theme-code-del-bg: hsl(338, 40%, 26%);
 	--theme-code-del-border: hsl(338, 46%, 53%);
 	--theme-code-del-text: hsl(338, 36%, 70%);
+	--theme-download: rgba(0, 0, 0, 0.1);
+	--theme-download-hover: rgba(0, 0, 0, 0.2);
+	--theme-buy: rgba(0, 0, 0, 0.1);
+	--theme-buy-hover: rgba(0, 0, 0, 0.2);
 
 	--theme-bg-gradient: linear-gradient(
 		180deg,
@@ -198,6 +202,10 @@
 	--theme-code-del-bg: hsl(337, 47%, 19%);
 	--theme-code-del-border: hsl(340, 34%, 43%);
 	--theme-code-del-text: hsl(340, 24%, 65%);
+	--theme-download: rgb(41, 41, 41);
+	--theme-download-hover: rgb(76, 76, 76);
+	--theme-buy: rgb(59, 59, 59);
+	--theme-buy-hover: rgb(74, 74, 74);
 
 	--theme-glow-highlight: hsla(var(--color-base-purple), 50%, 1);
 	--theme-glow-diffuse: hsla(var(--color-base-purple), 35%, 1);
